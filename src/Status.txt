@@ -1,7 +1,18 @@
-package com.sda5.todo;
+package com.sda5.todoapp;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Status {
     private String status;
+
+    public static ArrayList statusList(){
+
+    private List<String> slist = new ArrayList<>(Arrays.asList("InProgress", "Done"));
+    return slist;
+    }
+
 
     public Status(String status) {
         this.status = status;
