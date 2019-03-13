@@ -1,4 +1,3 @@
-package com.sda5.todoapp;
 
 public class Main {
 

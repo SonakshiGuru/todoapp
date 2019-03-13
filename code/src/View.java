@@ -1,4 +1,3 @@
-package com.sda5.todoapp;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

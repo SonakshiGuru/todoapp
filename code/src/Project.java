@@ -1,4 +1,3 @@
-package com.sda5.todoapp;
 
 import java.util.ArrayList;
 import java.util.List;
