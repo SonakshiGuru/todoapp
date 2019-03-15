@@ -1,3 +1,4 @@
+package Todoly;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -6,44 +7,29 @@ public class Task implements Serializable {
 
     private String name;
     private Date dueDate;
-    private boolean status;
     private String projectName;
-    private boolean completed;
+    private String status;
 
-    //
+    private static final long serialVersionUID = 21L;
 
-
-    public Task(String name, Date dueDate, boolean status, String project) {
-        this.name = name;
-        this.dueDate = dueDate;
-        this.status = status;
-        this.projectName = project;
-    }
 
     public Task(String name, Date dueDate, String project) {
         this.name = name;
         this.dueDate = dueDate;
-        this.completed = false;
         this.projectName = project;
+        this.status = "InProgress";
     }
 
     public String getName() {
         return name;
     }
 
-    public String getStatusString()
-    {
-        if (status == true)
-            return "done";
-        else
-            return "unDone";
-    }
 
-    public boolean getStatus() {
+    public String getStatus(){
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(String status){
         this.status = status;
     }
 
@@ -64,12 +50,12 @@ public class Task implements Serializable {
 
     public void setProject(String projectName) { this.projectName = projectName; }
 
-    private static final long serialVersionUID = 21L;
 
     @Override
     public String toString()
     {
-        return name + "----" + projectName + "----" + dueDate + "----" + getStatusString();
+        //return name + "----" + projectName + "----" + dueDate + "----" + getStatusString(); Nour
+        return "Taskname : " + name + "        " + "Project : " + projectName + "        " + "Due Date : " + dueDate + "        " + "Status : " + status + "\n";
     }
 
 

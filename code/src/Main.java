@@ -1,13 +1,18 @@
+import Todoly.Todoly;
 
+/**
+ *
+ * @Sonakshi
+ * @Todoly v1
+ */
 public class Main {
 
     public static void main(String[] args)
     {
-        /*View view1 = new View();
-        View view2 = new View(new TodoController());*/
 
-        View view = new View();
-        view.start();
+        Todoly app = new Todoly();
+
+        app.run();
 
     }
 
