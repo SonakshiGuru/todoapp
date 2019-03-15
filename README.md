@@ -18,4 +18,4 @@
 # Build for SDA individual project
 
 # Contributions
-Myself as the author. The teachers and TA(s) at KTH
+Myself as the author. The teachers, my mentor and TA(s) at KTH
