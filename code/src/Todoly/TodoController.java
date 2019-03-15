@@ -32,7 +32,6 @@ public class TodoController {
                 .filter(task -> task.getProject().equals(fProject) )
                 .collect(Collectors.toList());
 
-        //taskList.stream().filter().collect()
         return filtered;
     }
 
@@ -49,7 +48,6 @@ public class TodoController {
         });
 
         return taskList;
-        //return taskList.stream().collect(Collectors.toList());
 
     }
 

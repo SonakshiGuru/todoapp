@@ -1,21 +1,27 @@
 package Todoly;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.text.ParseException;
-import java.time.LocalDate;
-
-import static org.junit.jupiter.api.Assertions.fail;
+import java.util.Date;
 //import static org.junit.Assert.assertEquals;
 
 
 public class TaskTest {
-    Task t;
+    private Task t;
+    private String name = "TaskName X";
+    private Date date;
+    private DATE
+    private String status = "Complete";
+    private String project = "Mission Impossible";
+
 
     @Test
     public void GetTaskName() {
         try {
+            assertEquals(name, )
+        }
+
+        /*try {
             String taskName = "hello";
             t = new Task(taskName, Util.parseDate( "19-01-2019"), "world");
 
@@ -31,7 +37,7 @@ public class TaskTest {
         } catch (ParseException e) {
             fail();
 
-        }
+        }*/
 
 
     }

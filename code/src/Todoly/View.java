@@ -12,13 +12,11 @@ public class View {
     Scanner sc;
     TodoController controller;
     Util util;
-    //private ArrayList<Task> tasks;
     String filename;
     private List<Task> tasks;
 
 
     View(TodoController controller) {
-        //this.controller = controller;
         this.sc = new Scanner(System.in);
     }
 

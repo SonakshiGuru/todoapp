@@ -38,13 +38,6 @@ public class Task implements Serializable {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
-        this.dueDate = dueDate;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getProject() { return projectName; }
 
@@ -54,7 +47,6 @@ public class Task implements Serializable {
     @Override
     public String toString()
     {
-        //return name + "----" + projectName + "----" + dueDate + "----" + getStatusString(); Nour
         return "Taskname : " + name + "        " + "Project : " + projectName + "        " + "Due Date : " + dueDate + "        " + "Status : " + status + "\n";
     }
 
