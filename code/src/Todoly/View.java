@@ -105,6 +105,9 @@ public class View {
 
                             // add task
                             controller.addTask(name, dueDate, project);
+                            System.out.println("\n----------------------------------");
+                            System.out.println(" <<<<< TASK ADDED >>>>>");
+                            System.out.println("----------------------------------");
 
 
                         } catch (ParseException | DateTimeParseException e) {
