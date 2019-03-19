@@ -53,24 +53,23 @@ public class TaskTest {
         }
     }
 
-
-
-        /*try {
-            String taskName = "hello";
-            t = new Task(taskName, Util.parseDate( "19-01-2019"), "world");
-
-            t.getName();
-
-            String expected = "ho" + taskName;
-
-            // we assert equals on task.getName() with expected value
-            Assertions.assertTrue(t.getName().equals(expected));
-           // Assertions.assertEquals(t.getName(), expected);
-
-
-        } catch (ParseException e) {
-            fail();
-
-        }*/
+    @Test
+    public void setAndGetStatusTest() {
+        try {
+            t.setStatus("Done");
+            assertEquals("Done", t.getStatus());
+        } catch (Exception e) {
+            System.out.println("Test Failed");
+        }
+    }
+    @Test
+    public void setAndGetProjectNameTest() {
+        try {
+            t.setProject("new pro");
+            assertEquals("new pro", t.getProject());
+        } catch (Exception e) {
+            System.out.println("Test Failed");
+        }
+    }
 
 }
